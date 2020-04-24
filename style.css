@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #00000c;
+}
+
+.login-form {
+    max-width: 100%;
+    height: 100vh;
+    padding: 15px 15px 30px;
+    display: table;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+}
+
+.box {
+        background-color: rgb(1, 7, 10);
+        width: auto;
+        height: 510px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: thin solid cyan;
+        border-radius: 20%;
+        margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+    width: 350px;
+    height: 530px;
+    }
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box h5 {
+    color: white;
+    font-weight: 200;
+}
+.box p {
+    color: #e47106;
+}
+h5 a, form a {
+    color: #e47106;
+    text-decoration: none;
+}
+a:hover {
+    color: cyan;
+    width: 5px;
+    font-weight: 300px;
+}
+.box input[type="email"], .box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #e47106;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="email"]:focus, .box input[type="password"]:focus {
+width: 220px;
+border-color: #2ecc71;
+}
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition: 1s;
+}
+#google {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.781);
+    height: 50px;
+    width: 50px;
+    background: #ee0b0b;
+    border-radius: 60%;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+#google:hover {
+    background-color:red;
+    box-shadow: 0 0 15px rgb(255, 87, 87),  0 0 25px rgb(255, 87, 87), 0 0 25px rgb(255, 87, 87);
+    transition: 1s;
+}
+
+#facebook {
+    font-size: 20p25;
+    color: rgba(255, 255, 255, 0.781);
+    height: 50px;
+    width: 50px;
+    background: rgb(2, 18, 241);
+    border-radius: 60%;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+#facebook:hover {
+    background-color:rgb(2, 18, 241);
+    box-shadow: 0 0 15px rgb(10, 98, 230),  0 0 25px rgb(10, 98, 230), 0 0 25px rgb(10, 98, 230);
+    transition: 1s;
+}
+#twitter {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.781);
+    height: 50px;
+    width: 50px;
+    background: #0fbbe6;
+    border-radius: 60%;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+#twitter:hover {
+    background-color:rgb(2, 165, 241);
+    box-shadow: 0 0 15px rgb(87, 208, 245),  0 0 25px rgb(61, 228, 250), 0 0 25px rgb(81, 226, 219);
+    transition: 1s;
+}
+.login-form .box .input-icon {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    bottom: 0;
+    height: 100%;
+    padding-left: 35px;
+    color: #666;
+}
+
+.login-form button:hover{
+	opacity: 0.9;
+}
+.login-form .seperator {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	margin: 50px 0 0;
+}
+.login-form .seperator b {
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	position: relative;
+	top: -22px;
+	z-index: 1;
+}
+.login-form p {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 0 10px;
+}
